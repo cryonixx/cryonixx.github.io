@@ -1,24 +1,44 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import imageSrc from './cirball.png';
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+import * as THREE from 'three';
 
-setupCounter(document.querySelector('#counter'))
+
+const scene = new THREE.Scene();
+
+const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 ); 
+
+const renderer = new THREE.WebGLRenderer({
+    canvas: document.querySelector('#background'),
+}); 
+
+renderer.setPixelRatio(window.devicePixelRatio);
+renderer.setSize( window.innerWidth, window.innerHeight );
+camera.position.setZ(30);
+renderer.render(scene, camera);
+
+const pointLight = new THREE.PointLight(0xffffff);
+pointLight.position.set(5, 5, 5);
+const ambientLight = new THREE.AmbientLight(0xffffff);
+scene.add(pointLight, ambientLight);
+
+const nineballTexture = new THREE.TextureLoader().load(imageSrc);
+
+const nineball = new THREE.Mesh(
+    new THREE.SphereGeometry(10, 32, 32),
+    new THREE.MeshStandardMaterial({
+        map: nineballTexture
+    })
+);
+
+scene.add(nineball);
+
+function animate() {
+    requestAnimationFrame(animate);
+    nineball.rotation.y += 0.01;
+    renderer.render(scene, camera);
+}
+
+animate();
+
+
