@@ -31,8 +31,9 @@ createRoot(document.getElementById("root")!).render(
                 position={[50, 50]}
                 frozen={false}
                 title="Hello There :O"
-                content={<SplashText />}
-            />
+            >
+                <SplashText />
+            </Window>
         </div>
     </StrictMode>
 );

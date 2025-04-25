@@ -7,7 +7,7 @@ function Window(this: any, props: {
     position: [number, number];
     frozen: boolean;
     title: string;
-    content: React.ReactNode;
+    children: React.ReactNode;
 }) {
     // const [position, setPosition] = useState({x: props.position[0], y:props.position[1]})
     // const [cursorPosition, setOffset] = useState({x: 0, y:0});
@@ -59,7 +59,7 @@ function Window(this: any, props: {
                 <p>{props.title}</p>
             </div>
             <div className="p-1">
-                {props.content}
+                {props.children}
             </div>
         </div>
 
