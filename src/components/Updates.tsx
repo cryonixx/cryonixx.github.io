@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Updates() {
   return (
     <div  className="bg-white border-[#97ADD7] border-4 overflow-auto w-72 h-40 shadow-[inset_0px_0px_10px_#97ADD7CC] rounded p-4">
