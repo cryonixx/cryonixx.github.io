@@ -4,6 +4,8 @@ import background from "./assets/img/background.png";
 import Window from "./components/Window";
 import "./index.css";
 import SplashText from "./components/SplashText";
+import ToDo from "./components/ToDo";
+import Updates from "./components/Updates";
 
 const bgStyle = {
     backgroundImage: `url(${background})`,
@@ -33,6 +35,24 @@ createRoot(document.getElementById("root")!).render(
                 title="Hello There :O"
             >
                 <SplashText />
+            </Window>
+
+            <Window
+                size={[300, 300]}
+                position={[375, 50]}
+                frozen={false}
+                title="Shit that needs to be done >:("
+            >
+                <ToDo/>
+            </Window>
+
+            <Window
+                size={[300, 200]}
+                position={[375, 355]}
+                frozen={false}
+                title="What's been up? :>"
+            >
+                <Updates/>
             </Window>
         </div>
     </StrictMode>

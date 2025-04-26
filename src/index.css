@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+    --color-dani-powderblue: #DEE5F2;
+  }
+
 :root {
     margin: 0;
     padding: 0;

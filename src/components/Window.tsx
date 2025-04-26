@@ -1,5 +1,4 @@
 // import { useState } from "react";
-
 // import { useRef } from "react";
 
 function Window(this: any, props: {
@@ -20,41 +19,28 @@ function Window(this: any, props: {
         height: `${props.size[1]}px`,
     };
 
-    const titleBarStyle = {
-        border: '0.2 px solid #97ADD7',
-        backgroundColor: 'white',
-        padding: '0.25rem', // Equivalent to Tailwind's p-1
-        borderRadius: '0.04rem', // Equivalent to Tailwind's rounded-sm
-        boxShadow: 'inset 0 2px 4px 0 rgb(97 126 184)', // The inset shadow style
-        backgroundImage: 'linear-gradient(to top, #DEE5F2, #97ADD7, #DEE5F2)',
-      };
-
     return (
             <div
             style={windowStyle}
             className={[
                 "absolute",
-                "border-[#617EB8]",
-                "bg-[#e2e7f2]",
-                "border",
-                "drop-shadow-md",
-                "shadow-[inset_0px_2px_4px_rgba(0,0,0,0.2)]",
+                "bg-gradient-to-r from-[#97ADD7] via-[#DEE5F2] to-[#97ADD7]",
+                "drop-shadow-[5px_5px_0px_rgba(0,0,0,0.5)]",
                 "p-0.5",
-                "rounded-sm"
+                // "rounded",
+                "shadow-[inset_0px_0px_10px_white]",
+                "rounded"
+                //to note: always make sure the commas don't have spaces between and there is 'px' at the end
+                //^from stackoverflow^
+                //preset colors work too; for hex, always add two additional digits for opacity
             ].join(" ")}
         >
             <div
-                // className={[
-                //     "border-[#97ADD7]",
-                //     "border-2",
-                //     "bg-white",
-                //     // "bg-gradient-to-t from-[#DEE5F2] via-[#97ADD7] to-[#DEE5F2]",
-                //     "inset-shadow-[#617EB8]",
-                //     "p-1",
-                //     "rounded-sm",
-                //     "relative"
-                //     ].join(" ")}
-                style={titleBarStyle}
+                className={[
+                    "p-1",
+                    "relative",
+                    "overflow-auto"
+                    ].join(" ")}
                     >
                 <p>{props.title}</p>
             </div>
