@@ -6,6 +6,7 @@ import "./index.css";
 import SplashText from "./components/SplashText";
 import ToDo from "./components/ToDo";
 import Updates from "./components/Updates";
+import MusicEmbed from "./components/MusicEmbed";
 
 const bgStyle = {
     backgroundImage: `url(${background})`,
@@ -53,6 +54,15 @@ createRoot(document.getElementById("root")!).render(
                 title="What's been up? :>"
             >
                 <Updates/>
+            </Window>
+
+            <Window
+                size={[300, 200]}
+                position={[700, 50]}
+                frozen={false}
+                title="Tunes I've been listening to d(-_-)b"
+            >
+                <MusicEmbed/>
             </Window>
         </div>
     </StrictMode>
