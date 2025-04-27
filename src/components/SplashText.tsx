@@ -1,11 +1,15 @@
+import "../index.css";
+
 function SplashText() {
     return (
-        <div className="bg-white border-[#97ADD7] border-4 overflow-auto w-72 h-110 shadow-[inset_0px_0px_10px_#97ADD7CC] rounded p-4">
-            <h2>
-                <strong>ヤッホ、ダニカ-だよ！</strong>
+        <div>
+            <h1 className="font-jackey">
+                <strong className="text-darker-powderblue">
+                    ヤッホ、ダニカ-だよ！
+                </strong>
                 <br></br>
-            </h2>
-            <p>
+            </h1>
+            <p className="font-vt323">
                 Welcome to my little corner of the internet!! I absolutely adore
                 personal websites, so I thought why not take a crack at it too?
                 This website serves as my personal little space where I can
@@ -16,8 +20,21 @@ function SplashText() {
                 <br></br>
                 As you can see, this site is still empty; I have yet to actually
                 place my works and such. This is still under heavy construction
-                and it will forever be lmao. For now, this window will be the only thing
-                you'll see until I stop dilly-dallying around. See ya later!
+                and it will forever be lmao. For now, this window will be the
+                only thing you'll see until I stop dilly-dallying around. See ya
+                later!
+                <br></br>
+                <br></br>
+            </p>
+            <p className="font-jackey">
+                Also check{" "}
+                <a
+                    href="https://aishenreemo.github.io/"
+                    className="text-darker-powderblue"
+                >
+                    this guy out,
+                </a>{" "}
+                he's pretty cool!
             </p>
         </div>
     );

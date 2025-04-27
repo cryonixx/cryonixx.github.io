@@ -1,18 +1,39 @@
 function Updates() {
-  return (
-    <div  className="bg-white border-[#97ADD7] border-4 overflow-auto w-72 h-40 shadow-[inset_0px_0px_10px_#97ADD7CC] rounded p-4">
-        <h3><strong>Site Updates:</strong></h3>
-        <p>
-            <strong>April 2025</strong>
-            <br></br>
-            -Got the site up and running
-            <br></br>
-            -formatted the divs/windows
-            <br></br>
-            -Slightly went insane trying to make the background not move
-        </p>
-    </div>
-  )
+    return (
+        <div>
+            <h3>
+                <strong>Site Updates:</strong>
+            </h3>
+            <p>
+                <strong className="text-darker-powderblue">
+                    April 27 2025
+                </strong>
+                <br></br>
+                -Updated how the windows look (DUDE LOOK ATTHEM THEYRE SO COOL
+                LOOKIN :O)
+                <br></br>
+                -Placed the tailwind formatting for the content window to the
+                div itself than the child component
+                <br></br>
+                -FONTS NOW WORK ALSO THEY HAVE DIFFERENT COLORS NOW YEEEEEE
+                <br></br>
+                <br></br>
+                <strong className="text-darker-powderblue">April 2025</strong>
+                <br></br>
+                -Got the site up and running
+                <br></br>
+                -formatted the divs/windows
+                <br></br>
+                -Slightly went insane trying to make the background not move
+                <br></br>
+                <br></br>
+            </p>
+            <h3>
+                <strong>How many times has this site been visited? </strong>
+                IDK m8 I have yet to add a visiotr counter here
+            </h3>
+        </div>
+    );
 }
 
-export default Updates
+export default Updates;

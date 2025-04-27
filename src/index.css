@@ -1,8 +1,21 @@
+@import "https://fonts.googleapis.com/css2?family=VT323&display=swap"; /* turns out I just had to swap the URL and the tailwind import smh */
 @import "tailwindcss";
+@tailwind utilities;
 
 @theme {
-    --color-dani-powderblue: #DEE5F2;
-  }
+    --color-light-powderblue: #dee5f2;
+    --color-mid-powderblue: #97add7;
+    --color-dark-powderblue: #617eb8;
+    --color-darker-powderblue: #465577;
+
+    --font-vt323: "VT323", mono;
+    --font-jackey: "jackeyfont", mono;
+}
+
+@font-face {
+    font-family: "jackeyfont";
+    src: url("./assets/jackeyfont.ttf") format("truetype");
+}
 
 :root {
     margin: 0;

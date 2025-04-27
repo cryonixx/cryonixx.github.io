@@ -7,6 +7,7 @@ import SplashText from "./components/SplashText";
 import ToDo from "./components/ToDo";
 import Updates from "./components/Updates";
 import MusicEmbed from "./components/MusicEmbed";
+// import DiscordEmbed from "./components/DiscordEmbed";
 
 const bgStyle = {
     backgroundImage: `url(${background})`,
@@ -25,7 +26,7 @@ createRoot(document.getElementById("root")!).render(
                 "h-screen",
                 "z-[-1]",
                 "bg-cover",
-                "bg-center"
+                "bg-center",
             ].join(" ")}
             style={bgStyle}
         >
@@ -44,7 +45,7 @@ createRoot(document.getElementById("root")!).render(
                 frozen={false}
                 title="Shit that needs to be done >:("
             >
-                <ToDo/>
+                <ToDo />
             </Window>
 
             <Window
@@ -53,7 +54,7 @@ createRoot(document.getElementById("root")!).render(
                 frozen={false}
                 title="What's been up? :>"
             >
-                <Updates/>
+                <Updates />
             </Window>
 
             <Window
@@ -62,8 +63,17 @@ createRoot(document.getElementById("root")!).render(
                 frozen={false}
                 title="Tunes I've been listening to d(-_-)b"
             >
-                <MusicEmbed/>
+                <MusicEmbed />
             </Window>
+
+            {/* <Window
+                size={[300, 275]}
+                position={[700, 275]}
+                frozen={false}
+                title="Live Activities >_<!!"
+            >
+                <DiscordEmbed/>
+            </Window> */}
         </div>
     </StrictMode>
 );
