@@ -41,6 +41,7 @@ function Window(
                 "p-1",
                 "shadow-[inset_0px_0px_10px_white]",
                 "rounded",
+                "overflow-hidden"
                 //to note: always make sure the commas don't have spaces between and there is 'px' at the end
                 //^from stackoverflow^
                 //preset colors work too; for hex, always add two additional digits for opacity
