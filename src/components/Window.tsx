@@ -41,7 +41,7 @@ function Window(
                 "p-1",
                 "shadow-[inset_0px_0px_10px_white]",
                 "rounded",
-                "overflow-hidden"
+                "overflow-hidden",
                 //to note: always make sure the commas don't have spaces between and there is 'px' at the end
                 //^from stackoverflow^
                 //preset colors work too; for hex, always add two additional digits for opacity
@@ -49,8 +49,9 @@ function Window(
         >
             <div
                 className={[
-                    "p-1",
+                    "p-1.5",
                     "h-1/5",
+                    "max-h-10",
                     "font-vt323",
                     "text-darker-powderblue",
                 ].join(" ")}
@@ -66,8 +67,8 @@ function Window(
                     "shadow-[inset_0px_0px_10px_#97ADD7CC]",
                     "border-2",
                     "border-mid-powderblue",
-                    "overflow-auto",
-                    "h-4/5",
+                    "overflow-scroll",
+                    "h-[calc(100%-3rem)]",
                     "font-vt323",
                     "text-dark-powderblue",
                 ].join(" ")}

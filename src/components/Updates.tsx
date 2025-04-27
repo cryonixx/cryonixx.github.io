@@ -9,6 +9,8 @@ function Updates() {
                     April 27 2025
                 </strong>
                 <br></br>
+                -FIXED THE TITLE AND CONTENT DIV SIZE JANK RAAAAAAGHHHHH
+                <br></br>
                 -Updated how the windows look (DUDE LOOK ATTHEM THEYRE SO COOL
                 LOOKIN :O)
                 <br></br>
