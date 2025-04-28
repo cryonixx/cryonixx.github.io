@@ -6,6 +6,21 @@ function Updates() {
             </h3>
             <p>
                 <strong className="text-darker-powderblue">
+                    April 28 2025
+                </strong>
+                <br></br>
+                -I made the cirno banner :D
+                <br></br>
+                -Added some images and such; my logo is BUSSIN' rn
+                <br></br>
+                -Experimented with window placements (do i want to make it
+                reactive or just static? IDK)
+                <br></br>
+                -Site now scrollable
+                <br></br>
+                -Made minor changes to the border colors of windows
+                <br></br>
+                <strong className="text-darker-powderblue">
                     April 27 2025
                 </strong>
                 <br></br>
