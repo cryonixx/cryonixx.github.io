@@ -7,6 +7,8 @@ function ToDo() {
             <p>
                 <strong className="text-darker-powderblue">April 2025</strong>
                 <br></br>
+                -add credits for the assets and images I used (I noted them somewhere, dw; I'll just have to put them all in one go after)
+                <br></br>
                 -fix the damn formatting this shit is so messy
                 <br></br>
                 <s>-figure out how to put the fonts without going insane</s>
@@ -17,8 +19,10 @@ function ToDo() {
                 <br></br>
                 -organize the contents and classes of components
                 <br></br>
-                -fix the janky sizing bruh look at the title bars they are a
-                MESS
+                <s>
+                    -fix the janky sizing bruh look at the title bars they are a
+                    MESS
+                </s>
             </p>
         </div>
     );

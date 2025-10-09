@@ -1,18 +1,18 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import background from "./assets/img/background.png";
-import logo from "./assets/img/logo.png";
-import cirno from "./assets/img/cirno_standing.png";
-import cirnobanner from "./assets/img/cirno_banner.gif";
-import snowmiku from "./assets/img/snow_miku.png";
-import Window from "./components/Window";
-import "./index.css";
-import SplashText from "./components/SplashText";
-import ToDo from "./components/ToDo";
-import Updates from "./components/Updates";
-import MusicEmbed from "./components/MusicEmbed";
-import Introduction from "./components/Introduction";
-import Me from "./components/Me";
+// import { StrictMode } from "react";
+// import { createRoot } from "react-dom/client";
+import background from "../assets/img/background.png";
+import logo from "../assets/img/logo.png";
+import cirno from "../assets/img/cirno_standing.png";
+import cirnobanner from "../assets/img/cirno_banner.gif";
+import snowmiku from "../assets/img/snow_miku.png";
+import Window from "../components/Window";
+import "../index.css";
+import SplashText from "../components/SplashText";
+import ToDo from "../components/ToDo";
+import Updates from "../components/Updates";
+import MusicEmbed from "../components/MusicEmbed";
+import Introduction from "../components/Introduction";
+import Me from "../components/Me";
 // import DiscordEmbed from "./components/DiscordEmbed";
 
 const bgStyle = {
@@ -20,8 +20,11 @@ const bgStyle = {
     backgroundRepeat: "no-repeat",
 };
 
-createRoot(document.getElementById("root")!).render(
-    <StrictMode>
+
+
+function HomePage() {
+    return(
+
         <div
             className={[
                 "fixed",
@@ -77,7 +80,7 @@ createRoot(document.getElementById("root")!).render(
                     size={[290, 200]}
                     position={[785, 505]}
                     frozen={false}
-                    title="What's been up? :>"
+                    title="What's been up? :> (NEW!!!!)"
                 >
                     <Updates />
                 </Window>
@@ -112,5 +115,7 @@ createRoot(document.getElementById("root")!).render(
                 <img></img>
             </div>
         </div>
-    </StrictMode>
-);
+    )
+}
+
+export default HomePage;

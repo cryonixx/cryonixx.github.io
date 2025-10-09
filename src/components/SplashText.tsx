@@ -3,10 +3,8 @@ import "../index.css";
 function SplashText() {
     return (
         <div>
-            <h1 className="font-jackey">
-                <strong className="text-darker-powderblue">
-                    ヤッホ、ダニカ-だよ！
-                </strong>
+            <h1 className="font-jackey text-darker-powderblue">
+                <strong>ヤッホ、ダニカ-だよ！</strong>
                 <br></br>
             </h1>
             <p className="font-vt323">

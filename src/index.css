@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @theme {
+    --color-lighter-powderblue: "#e5e7ed";
     --color-light-powderblue: #dee5f2;
     --color-mid-powderblue: #97add7;
     --color-dark-powderblue: #617eb8;
@@ -10,11 +11,17 @@
 
     --font-vt323: "VT323", mono;
     --font-jackey: "jackeyfont", mono;
+    --font-embroidery: "embroideryfont", mono;
 }
 
 @font-face {
     font-family: "jackeyfont";
     src: url("./assets/jackeyfont.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "embroideryfont";
+    src: url("./assets/vtks-embroidery.regular.ttf") format("truetype");
 }
 
 :root {

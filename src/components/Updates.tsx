@@ -6,6 +6,14 @@ function Updates() {
             </h3>
             <p>
                 <strong className="text-darker-powderblue">
+                    October 9 2025
+                </strong>
+                <br></br>
+                -Created a NotFound Page (try finding it {":>"} )
+                <br></br>
+                -Added a Landing Page!! (First page you will be seeing when entering my site)
+                <br></br>
+                <strong className="text-darker-powderblue">
                     April 28 2025
                 </strong>
                 <br></br>
