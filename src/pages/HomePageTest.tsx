@@ -8,11 +8,12 @@ import snowmiku from "../assets/img/snow_miku.png";
 import Window from "../components/Window";
 import "../index.css";
 import SplashText from "../components/SplashText";
-import ToDo from "../components/ToDo";
+// import ToDo from "../components/ToDo";
 import Updates from "../components/Updates";
 import MusicEmbed from "../components/MusicEmbed";
 import Introduction from "../components/Introduction";
 import Me from "../components/Me";
+import NavigationMenu from "../components/NavigationMenu";
 // import DiscordEmbed from "./components/DiscordEmbed";
 
 const bgStyle = {
@@ -20,7 +21,7 @@ const bgStyle = {
     backgroundRepeat: "no-repeat",
 };
 
-function HomePage() {
+function HomePageTest() {
     return (
         <div
             className={[
@@ -68,9 +69,9 @@ function HomePage() {
                     size={[300, 300]}
                     position={[475, 505]}
                     frozen={false}
-                    title="Shit that needs to be done >:("
+                    title="Navigation ☜(°▽°)☛"
                 >
-                    <ToDo />
+                    <NavigationMenu />
                 </Window>
 
                 <Window
@@ -115,4 +116,4 @@ function HomePage() {
     );
 }
 
-export default HomePage;
+export default HomePageTest;

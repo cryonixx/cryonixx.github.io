@@ -2,9 +2,9 @@ import "../index.css";
 
 function Introduction() {
     return (
-        <div className="grid grid-cols-2">
+        <header className="grid grid-cols-2">
             <img></img>
-            <p className="font-vt323">
+            <article className="font-vt323">
                 <strong className="text-darker-powderblue font-jackey">
                     ピンポン！！
                 </strong>
@@ -17,8 +17,8 @@ function Introduction() {
                 still in the middle of figuring out how to un-spaghettify my
                 code here, as I have no idea what I'm doing. (probably might
                 also need to make more stuff to put in here as well ;-;)
-            </p>
-        </div>
+            </article>
+        </header>
     );
 }
 

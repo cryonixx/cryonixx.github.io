@@ -7,7 +7,8 @@ function ToDo() {
             <p>
                 <strong className="text-darker-powderblue">April 2025</strong>
                 <br></br>
-                -add credits for the assets and images I used (I noted them somewhere, dw; I'll just have to put them all in one go after)
+                -add credits for the assets and images I used (I noted them
+                somewhere, dw; I'll just have to put them all in one go after)
                 <br></br>
                 -fix the damn formatting this shit is so messy
                 <br></br>

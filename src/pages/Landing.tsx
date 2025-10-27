@@ -32,8 +32,7 @@ function Landing() {
                     frozen={false}
                     title="A warm welcome to a place so chilly!! (˶ˆᗜˆ˵)"
                 >
-                    <div
-                    className="flex items-center flex-col">
+                    <div className="flex items-center flex-col">
                         <h1 className="text-darker-powderblue font-jackey text-center text-4xl">
                             ようこそ！!
                         </h1>
@@ -59,33 +58,35 @@ function Landing() {
                             website for personal use in mind; however, if you
                             wish to see my works and intend to connect with me
                             for business purposes, feel free to visit{" "}
-                            <Link to={"/404"} className="text-darker-powderblue">
+                            <Link
+                                to={"/404"}
+                                className="text-darker-powderblue"
+                            >
                                 my portfolio site
-                            </Link>
-                            {" "} instead where I provide a more
-                            comprehensive and professional view of my skills and
-                            such.<br></br>
+                            </Link>{" "}
+                            instead where I provide a more comprehensive and
+                            professional view of my skills and such.<br></br>
                         </p>
                         <Link to="/home">
-                        <button
-                            className={[
-                                "rounded",
-                                "bg-gradient-to-r",
-                                "from-mid-powderblue",
-                                "via-light-powderblue",
-                                "to-mid-powderblue",
-                                "border-4",
-                                "border-l-white",
-                                "border-t-white",
-                                "border-b-dark-powderblue",
-                                "border-r-dark-powderblue",
-                                "drop-shadow-[2px_2px_2px_#465577BB]",
-                                "p-1",
-                                "text-darker-powderblue"
-                            ].join(" ")}
-                        >
-                            Enter the silly place!{" "}
-                        </button>
+                            <button
+                                className={[
+                                    "rounded",
+                                    "bg-gradient-to-r",
+                                    "from-mid-powderblue",
+                                    "via-light-powderblue",
+                                    "to-mid-powderblue",
+                                    "border-4",
+                                    "border-l-white",
+                                    "border-t-white",
+                                    "border-b-dark-powderblue",
+                                    "border-r-dark-powderblue",
+                                    "drop-shadow-[2px_2px_2px_#465577BB]",
+                                    "p-1",
+                                    "text-darker-powderblue",
+                                ].join(" ")}
+                            >
+                                Enter the silly place!{" "}
+                            </button>
                         </Link>
                     </div>
                 </Window>

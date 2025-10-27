@@ -42,11 +42,12 @@ function Bands() {
                     src={heartpatch}
                 ></img>
                 <h1 className="rotate-358 font-embroidery text-9xl text-center text-white z-2">
-                   bands i really like
+                    bands i really like
                 </h1>
                 <p className="text-center text-white z-2 rotate-0.5">
-                    Basically bands whose songs I listen to at an unhealthy amount.
-I am very broke and cannot afford to buy actual pins/patches/badges so....
+                    Basically bands whose songs I listen to at an unhealthy
+                    amount. I am very broke and cannot afford to buy actual
+                    pins/patches/badges so....
                 </p>
                 <img
                     className="absolute w-20 h-auto rotate-45 drop-shadow-[5px_5px_5px_#171716CC] left-20 top-1"
@@ -100,9 +101,10 @@ I am very broke and cannot afford to buy actual pins/patches/badges so....
                     src={backpatch}
                 ></img>
                 <Link to="/">
-                <button className="absolute rotate-350 text-white hover:scale-1.5 hover:rotate-335 left-320 top-120 font-embroidery text-4xl">Go Back</button>
+                    <button className="absolute rotate-350 text-white hover:scale-1.5 hover:rotate-335 left-320 top-120 font-embroidery text-4xl">
+                        Go Back
+                    </button>
                 </Link>
-
             </div>
         </div>
     );

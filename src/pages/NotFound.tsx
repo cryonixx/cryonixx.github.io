@@ -33,8 +33,7 @@ function NotFound() {
                     frozen={false}
                     title="Uh Oh !! (ᗒᗣᗕ)"
                 >
-                    <div
-                    className="flex items-center flex-col">
+                    <div className="flex items-center flex-col">
                         <h1 className="text-darker-powderblue font-jackey text-center text-4xl">
                             あ-!
                         </h1>
@@ -43,31 +42,33 @@ function NotFound() {
                         </p>
                         <img
                             className="w-auto h-50 border-4 border-mid-powderblue rounded mx-auto"
-                            src={cirnoconfused}>
-                        </img>
+                            src={cirnoconfused}
+                        ></img>
                         <p className="text-center text-xl">
-                            Page is either non-existent (like my dad), or you encountered an error. Either way; you're in the wrong place!! :(
+                            Page is either non-existent (like my dad), or you
+                            encountered an error. Either way; you're in the
+                            wrong place!! :(
                         </p>
                         <Link to="/home">
-                        <button
-                            className={[
-                                "rounded",
-                                "bg-gradient-to-r",
-                                "from-mid-powderblue",
-                                "via-light-powderblue",
-                                "to-mid-powderblue",
-                                "border-4",
-                                "border-l-white",
-                                "border-t-white",
-                                "border-b-dark-powderblue",
-                                "border-r-dark-powderblue",
-                                "drop-shadow-[2px_2px_2px_#465577BB]",
-                                "p-1",
-                                "text-darker-powderblue"
-                            ].join(" ")}
-                        >
-                           Go back{" "}
-                        </button>
+                            <button
+                                className={[
+                                    "rounded",
+                                    "bg-gradient-to-r",
+                                    "from-mid-powderblue",
+                                    "via-light-powderblue",
+                                    "to-mid-powderblue",
+                                    "border-4",
+                                    "border-l-white",
+                                    "border-t-white",
+                                    "border-b-dark-powderblue",
+                                    "border-r-dark-powderblue",
+                                    "drop-shadow-[2px_2px_2px_#465577BB]",
+                                    "p-1",
+                                    "text-darker-powderblue",
+                                ].join(" ")}
+                            >
+                                Go back{" "}
+                            </button>
                         </Link>
                     </div>
                 </Window>
