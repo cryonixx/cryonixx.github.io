@@ -26,7 +26,7 @@ function NotFound() {
             ].join(" ")}
             style={bgStyle}
         >
-            <div className="overflow-auto w-full h-full relative z-0">
+            <div className="overflow-auto w-full h-full relative z-0 flex justify-center">
                 <Window
                     size={[600, 460]}
                     position={[475, 100]}
