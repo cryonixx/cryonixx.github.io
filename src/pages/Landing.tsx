@@ -55,9 +55,10 @@ function Landing() {
                             <br></br>
                             There will be changes here and there, and this will
                             be perpetually under construction. I created this
-                            website for personal use in mind; however, if you
-                            wish to see my works and intend to connect with me
-                            for business purposes, feel free to visit{" "}
+                            website for personal use in mind, therefore, is
+                            incredibly informal; however, if you wish to see my
+                            works and intend to connect with me for business
+                            purposes, feel free to visit{" "}
                             <Link
                                 to={"/404"}
                                 className="text-darker-powderblue"
